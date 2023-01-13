@@ -10,6 +10,8 @@ python ./get-pip.py
 
 cd \
 cd \python%python_ver%\Scripts\
+pip install pydub
+pip install ffmpeg
 pip install requests~=2.28.1
 pip install numpy~=1.22.4
 pip install tqdm~=4.64.1

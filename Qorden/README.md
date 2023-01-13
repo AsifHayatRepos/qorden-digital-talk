@@ -1,3 +1,3 @@
 # qorden-digital-talk
 
-To install dependencies please use Lib-Installer.bat for windows with python installed with version >3.5
+To install dependencies please use Lib-Installer.bat on python version >3.5

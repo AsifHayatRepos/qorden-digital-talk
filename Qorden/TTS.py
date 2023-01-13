@@ -21,13 +21,10 @@ def change_voice(engine, language, gender='VoiceGenderFemale'):
         if language in voice.languages and gender == voice.gender:
             engine.setProperty('voice', voice.id)
             return True
-
     raise RuntimeError("Language '{}' for gender '{}' not found".format(language, gender))
 
-for voice in engine.getProperty('voices'):
-    print(voice)
-engine.say("Hello World!")
-engine.say('Say Hi' + str(rate()))
-engine.runAndWait()
-engine.stop()
-engine.runAndWait()
+def STT(text):
+    engine.say(text)
+    engine.runAndWait()
+    engine.stop()
+    engine.runAndWait()
