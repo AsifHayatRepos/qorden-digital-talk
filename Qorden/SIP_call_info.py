@@ -6,7 +6,7 @@ current_call = None
 
 # Logging callback
 def log_cb(level, str, len):
-    print str,
+    print (str)
 
 
 # Callback to receive events from account
