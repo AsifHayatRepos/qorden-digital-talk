@@ -10,7 +10,5 @@ def answer(call):
 
 
 if __name__ == "__main__":
-    phone = VoIPPhone('192.168.1.207', 4433, 168, 1234, myIP ='192.168.11.113', rtpPortLow=49152, rtpPortHigh=64512)
+    phone = VoIPPhone('192.168.1.207', 4433, '133', '1234', myIP ='83.110.2.255')
     phone.start()
-    input('Press enter to disable the phone')
-    phone.stop()
