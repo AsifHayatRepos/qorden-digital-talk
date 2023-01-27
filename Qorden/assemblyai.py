@@ -15,7 +15,7 @@ def assembly(data):
     headers = {"authorization": api_key, "content-type": "application/json"}
     upload_response = requests.post(UPLOAD_ENDPOINT, headers=headers, data=data)
     audio_url = upload_response.json()["upload_url"]
-    transcript_request = {'audio_url': audio_url}
+    transcript_request = {'audio_url': audio_url, "language_detection": True}
     transcript_response = requests.post(TRANSCRIPTION_ENDPOINT, json=transcript_request, headers=headers)
     _id = transcript_response.json()["id"]
     while True:
